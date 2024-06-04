@@ -6,9 +6,11 @@ const caixaPrincipal = document.querySelectorAll(".caixa-principal");
 
 const perguntas = [
 {
-    enunciado: "pergunta1", alternativas:["alternativa1", "alternativa2"]
+    enunciado: "pergunta1", 
+    alternativas:["alternativa1", "alternativa2"]
 },
 {
-    enunciado: "pergunta1", alternativas:["alternativa1", "alternativa2"]
+    enunciado: "pergunta1", 
+    alternativas:["alternativa1", "alternativa2"]
 }
 ];
