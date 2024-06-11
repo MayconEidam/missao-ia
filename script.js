@@ -1,5 +1,5 @@
 const caixaPrincipal = document.querySelectorAll(".caixa-principal");
-const caixaPergunta = document.querySelectorAll(".caixa-pergunta");
+const caixaPerguntas = document.querySelectorAll(".caixa-pergunta");
 const caixaAlternativa = document.querySelectorAll(".caixa-alternativa");
 const caixaPrincipal = document.querySelectorAll(".caixa-principal");
 const caixaPrincipal = document.querySelectorAll(".caixa-principal");
@@ -18,3 +18,12 @@ const perguntas = [
         "políticas de redistribuição de renda e oportunidades,ppromovendo uma distribuição igual dos recursos e do acesso aos benefícios"]
 }
 ];
+
+let atual = 0;
+let perguntaAtual;
+
+function mostraPergunta(){
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+mostraPergunta();
