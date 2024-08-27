@@ -41,8 +41,13 @@ function mostraAlternativas(){
 
 function respostaSelecionada(opcaoSelecionada){
     const afirmacao = opcaoSelecionada.afirmacao;
-    historiaFinal = afirmacao;
+    historiaFinal += afirmacao + " ";
     atual++
     mostraPergunta();
 }
 
+function mostraResultadp(){
+    caixaPerguntas.textContent = "síntese final...";
+    textoResultado.textContent = historiaFinal
+    caixaPerguntas.textContent = "";
+}
